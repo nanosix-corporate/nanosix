@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <title>Nanosix</title>
+
+    <link rel="icon" href="element/logo-standalone.svg">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="selection:bg-primary selection:text-white antialiased">
+
+    <div class="relative flex flex-col w-full">
+
+        <header class="header">
+            <div class="header-pill">
+                <div class="header-inner">
+
+                    <div class="header-logo-box">
+                        <img id="header-logo" src="element/logo.svg" alt="NANOSIX">
+                    </div>
+
+                    <div class="nav-box hidden lg:flex">
+                        <a href="#about" class="nav-link">About Us</a>
+                        <a href="#product" class="nav-link">Product</a>
+                        <a href="#research" class="nav-link">Research</a>
+                        <a href="#people" class="nav-link">People</a>
+                    </div>
+
+                    <div class="contact-box-v2" id="right-pill">
+                        <div class="flex items-center">
+                            <button id="call-btn" class="action-icon-btn">
+                                <span class="material-symbols-outlined">call</span>
+                            </button>
+                            <div id="call-panel" class="hidden-panel">
+                                <span class="number-text">+62 21 2248 3303</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <button id="email-btn" class="action-icon-btn">
+                                <span class="material-symbols-outlined">mail</span>
+                            </button>
+                            <div id="email-panel" class="hidden-panel">
+                                <span class="email-text">corporate@nanosix.net</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="hamburger-btn" class="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
+
+        <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+            <nav class="mobile-menu-nav">
+                <a href="#about" class="mobile-menu-link">About Us</a>
+                <a href="#product" class="mobile-menu-link">Product</a>
+                <a href="#research" class="mobile-menu-link">Research</a>
+                <a href="#people" class="mobile-menu-link">People</a>
+            </nav>
+            <div class="mobile-menu-contacts">
+                <a href="tel:+622122483303" class="mobile-contact-pill">
+                    <span class="material-symbols-outlined">call</span>
+                    <span>+62 21 2248 3303</span>
+                </a>
+                <a href="mailto:corporate@nanosix.net" class="mobile-contact-pill">
+                    <span class="material-symbols-outlined">mail</span>
+                    <span>corporate@nanosix.net</span>
+                </a>
+            </div>
+        </div>
+
+        <main>
+
+            <section id="hero-section" class="relative h-screen flex items-center overflow-hidden">
+
+                <div class="absolute inset-0 z-0 hero-media-frame">
+                    <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-80">
+                        <source src="element/hero_1.webm" type="video/webm">
+                    </video>
+                    <div class="absolute inset-0 bg-black/40"></div>
+                </div>
+
+                <div class="site-grid relative z-10 w-full">
+                    <div class="col-span-4 lg:col-span-12">
+                        <div class="max-w-4xl">
+                            <h1 class="hero-headline uppercase">
+                                Infinite<br>
+                                Innovation<br>
+                            </h1>
+                            <a href="#product"
+                                class="btn-primary inline-flex items-center gap-4 px-8 py-3.5 font-bold uppercase text-sm group tracking-wider">
+                                Explore Products
+                                <span
+                                    class="material-symbols-outlined group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">north_east</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white border-t border-b border-black/10" id="about">
+                <div class="site-grid">
+                    <div class="col-span-12 about-content-row">
+
+                        <div class="about-left-col">
+                            <p class="text-2xl lg:text-3xl font-medium leading-relaxed text-black">
+                                Since 2016, Nanosix has focused on mastering advanced materials — turning nanosized
+                                precision into real-world solutions across energy, healthcare, and sustainability.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="values-ticker-section">
+                <div class="values-ticker-track">
+                    <div class="values-ticker-inner">
+
+                        <span>Infinite Innovation <i class="ticker-dot">•</i></span>
+                        <span>Trust <i class="ticker-dot">•</i></span>
+                        <span>Sustainability <i class="ticker-dot">•</i></span>
+                        <span>Empowering People <i class="ticker-dot">•</i></span>
+
+                        <span>Infinite Innovation <i class="ticker-dot">•</i></span>
+                        <span>Trust <i class="ticker-dot">•</i></span>
+                        <span>Sustainability <i class="ticker-dot">•</i></span>
+                        <span>Empowering People <i class="ticker-dot">•</i></span>
+
+                        <span>Infinite Innovation <i class="ticker-dot">•</i></span>
+                        <span>Trust <i class="ticker-dot">•</i></span>
+                        <span>Sustainability <i class="ticker-dot">•</i></span>
+                        <span>Empowering People <i class="ticker-dot">•</i></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white border-t border-black/10 pt-4 lg:pt-0" id="our-products-intro">
+                <div class="about-header-row">
+                    <div class="site-grid">
+                        <div class="col-span-12">
+                            <span class="section-label mb-0">Our Products</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="product" class="bg-white py-10">
+                <div class="product-frame">
+                    <div class="sticky-product-container">
+
+                        <div class="product-bg-track">
+                            <img src="element/product/card-image-01.webp" class="product-bg active" data-index="0">
+                            <img src="element/product/card-image-02.webp" class="product-bg" data-index="1">
+                            <img src="element/product/card-image-03.webp" class="product-bg" data-index="2">
+                            <img src="element/product/card-image-04.webp" class="product-bg" data-index="3">
+                            <div class="product-bg-overlay"></div>
+                        </div>
+
+                        <div class="product-cards-viewport">
+                            <div class="product-cards-track" id="cards-track">
+
+                                <div class="product-scroll-item">
+                                    <div class="product-mobile-image">
+                                        <img src="element/product/card-image-01.webp" alt="Nano Diesel">
+                                    </div>
+                                    <div class="product-description-card white-card">
+                                        <div class="product-logo-tag">
+                                            <img src="element/product-logo/product-logo-1.svg" alt="Nano Diesel">
+                                        </div>
+                                        <div class="max-w-md">
+                                            <p class="text-l lg:text-xl font-normal leading-relaxed text-black">
+                                                Bio-oxygenated with carbon-based nanoparticles diesel fuel additive.
+                                                Nano
+                                                Diesel enhances fuel atomization, improves combustion efficiency, and
+                                                provides
+                                                superior lubrication properties—powering the smooth & clean energy
+                                                transition.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-scroll-item">
+                                    <div class="product-mobile-image">
+                                        <img src="element/product/card-image-02.webp" alt="Lubrinum">
+                                    </div>
+                                    <div class="product-description-card white-card">
+                                        <div class="product-logo-tag">
+                                            <img src="element/product-logo/product-logo-2.svg" alt="Lubrinum">
+                                        </div>
+                                        <div class="max-w-md">
+                                            <p class="text-l lg:text-xl font-normal leading-relaxed text-black">
+                                                Beyond lubrication, Lubrinum transforms ordinary engine oil into
+                                                advanced protection. Its active nanoparticles create molecular barriers
+                                                between metal surfaces, reducing friction and wear—extending component
+                                                life in extreme conditions.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-scroll-item">
+                                    <div class="product-mobile-image">
+                                        <img src="element/product/card-image-03.webp" alt="Nanodion">
+                                    </div>
+                                    <div class="product-description-card white-card">
+                                        <div class="product-logo-tag">
+                                            <img src="element/product-logo/product-logo-3.svg" alt="Nanodion">
+                                        </div>
+                                        <div class="max-w-md">
+                                            <p class="text-l lg:text-xl font-normal leading-relaxed text-black">
+                                                Nanodion elevates turmeric into biopharmaceutical-grade nano-herbal
+                                                innovation.
+                                                Nanotechnology breaks curcumin into molecular precision for maximum
+                                                absorption and
+                                                natural healing efficiency.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-scroll-item">
+                                    <div class="product-mobile-image">
+                                        <img src="element/product/card-image-04.webp" alt="Nanococo">
+                                    </div>
+                                    <div class="product-description-card white-card">
+                                        <div class="product-logo-tag">
+                                            <img src="element/product-logo/product-logo-4.svg" alt="Nanococo">
+                                        </div>
+                                        <div class="max-w-md">
+                                            <p class="text-l lg:text-xl font-normal leading-relaxed text-black">
+                                                Pure young coconut water enhanced with nanotechnology for superior
+                                                hydration and
+                                                absorption. Nature's perfection, refined by science.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="py-20 bg-white border-t border-black/10" id="research">
+                <div class="site-grid">
+                    <div class="col-span-4 lg:col-span-12">
+                        <span class="section-label">Research & Pipeline</span>
+                    </div>
+                </div>
+                <div class="site-grid mt-10">
+                    <div class="col-span-4 lg:col-span-12 research-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
+                        <div class="research-item">
+                            <h3 class="research-name">Nanocurcumin</h3>
+                        </div>
+                        <div class="research-item">
+                            <h3 class="research-name">Nanosix Enzyme Immobilitation</h3>
+                        </div>
+                        <div class="research-item">
+                            <h3 class="research-name">Glaszo</h3>
+                        </div>
+                        <div class="research-item">
+                            <h3 class="research-name">Ciliq Ugenix</h3>
+                        </div>
+                        <div class="research-item">
+                            <h3 class="research-name">Gasoline Nano-Additive</h3>
+                        </div>
+                        <div class="research-item">
+                            <h3 class="research-name">2nd Gen Bioethanol</h3>
+                        </div>
+                        <div class="research-item">
+                            <h3 class="research-name">3rd Gen Biofuel</h3>
+                        </div>
+                        <div class="research-item">
+                            <h3 class="research-name">Axial Generator</h3>
+                        </div>
+                        <div class="research-item">
+                            <h3 class="research-name">Blue Turtle - Pedal Assist Hybrid EV</h3>
+                        </div>
+                        <div class="research-item">
+                            <h3 class="research-name">Nano-Herbs</h3>
+                        </div>
+                        <div class="research-item">
+                            <h3 class="research-name">Graphene Lead Acid Battery</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 bg-white border-t border-black/10" id="people">
+                <div class="site-grid items-stretch">
+
+                    <div class="col-span-4 lg:col-span-4 flex flex-col items-start pt-10 lg:pr-10">
+                        <span class="section-label !text-white !mb-12">Our People</span>
+                        <p class="text-xl lg:text-2xl font-medium leading-relaxed text-black">
+                            Our team bridges the gap between nano-technology and human empowerment, building a
+                            foundation for sustainable futures through collaborative excellence.
+                        </p>
+                    </div>
+
+                    <div class="col-span-4 lg:col-span-8 flex flex-col mt-10 lg:mt-0 !rounded-[1rem] overflow-hidden">
+
+                        <div class="grid grid-cols-2">
+                            <img src="element/people/People - 1.png" alt="Muhammad Fajar Putranto"
+                                class="w-full aspect-square object-cover object-top block">
+                            <img src="element/people/People - 2.png" alt="Fahmi Syarifuddin"
+                                class="w-full aspect-square object-cover object-top block">
+                        </div>
+
+                        <div class="grid grid-cols-2">
+                            <div class="bg-[#D9D9D9] py-8 px-6 lg:px-12 flex flex-col justify-start">
+                                <h3 class="text-lg lg:text-xl font-bold text-black mb-2">Muhammad Fajar Putranto</h3>
+                                <p class="text-sm lg:text-base font-medium text-black opacity-80">Founder and CEO</p>
+                            </div>
+                            <div class="bg-[#CFCFCF] py-8 px-6 lg:px-12 flex flex-col justify-start">
+                                <h3 class="text-lg lg:text-xl font-bold text-black mb-2">Fahmi Syarifuddin</h3>
+                                <p class="text-sm lg:text-base font-medium text-black opacity-80">Co-Founder and
+                                    Technical Lead</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="py-20 bg-white border-t border-black/10 overflow-hidden">
+                <div class="values-ticker-track opacity-100">
+                    <div class="values-ticker-inner flex items-center gap-8 pr-16">
+
+                        <div class="text-base uppercase font-bold tracking-widest text-black whitespace-nowrap ml-16">
+                            Our
+                            Partners:</div>
+                        <img src="element/partner-certified/UBK.png" alt="UBK" class="h-10 w-auto">
+                        <img src="element/partner-certified/10 November.png" alt="10 November" class="h-10 w-auto">
+                        <img src="element/partner-certified/FIB Unpad.png" alt="FIB Unpad" class="h-10 w-auto">
+                        <div class="text-base uppercase font-bold tracking-widest text-black whitespace-nowrap ml-16">
+                            Certified By:</div>
+                        <img src="element/partner-certified/Migas.png" alt="Migas" class="h-10 w-auto">
+                        <img src="element/partner-certified/10 November.png" alt="10 November" class="h-10 w-auto">
+                        <img src="element/partner-certified/Sucofindo.png" alt="Sucofindo" class="h-10 w-auto">
+                        <img src="element/partner-certified/SIG.png" alt="SIG" class="h-10 w-auto">
+
+                        <div class="text-base uppercase font-bold tracking-widest text-black whitespace-nowrap ml-16">
+                            Our
+                            Partners:</div>
+                        <img src="element/partner-certified/UBK.png" alt="UBK" class="h-10 w-auto">
+                        <img src="element/partner-certified/10 November.png" alt="10 November" class="h-10 w-auto">
+                        <img src="element/partner-certified/FIB Unpad.png" alt="FIB Unpad" class="h-10 w-auto">
+                        <div class="text-base uppercase font-bold tracking-widest text-black whitespace-nowrap ml-16">
+                            Certified By:</div>
+                        <img src="element/partner-certified/Migas.png" alt="Migas" class="h-10 w-auto">
+                        <img src="element/partner-certified/10 November.png" alt="10 November" class="h-10 w-auto">
+                        <img src="element/partner-certified/Sucofindo.png" alt="Sucofindo" class="h-10 w-auto">
+                        <img src="element/partner-certified/SIG.png" alt="SIG" class="h-10 w-auto">
+
+                        <div class="text-base uppercase font-bold tracking-widest text-black whitespace-nowrap ml-16">
+                            Our
+                            Partners:</div>
+                        <img src="element/partner-certified/UBK.png" alt="UBK" class="h-10 w-auto">
+                        <img src="element/partner-certified/10 November.png" alt="10 November" class="h-10 w-auto">
+                        <img src="element/partner-certified/FIB Unpad.png" alt="FIB Unpad" class="h-10 w-auto">
+                        <div class="text-base uppercase font-bold tracking-widest text-black whitespace-nowrap ml-16">
+                            Certified By:</div>
+                        <img src="element/partner-certified/Migas.png" alt="Migas" class="h-10 w-auto">
+                        <img src="element/partner-certified/10 November.png" alt="10 November" class="h-10 w-auto">
+                        <img src="element/partner-certified/Sucofindo.png" alt="Sucofindo" class="h-10 w-auto">
+                        <img src="element/partner-certified/SIG.png" alt="SIG" class="h-10 w-auto">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-outer-container !bg-white">
+            <div class="footer-inner-card py-10 text-white relative flex flex-col justify-between">
+
+                <video autoplay loop muted playsinline class="footer-video-bg">
+                    <source src="element/footer_media.webm" type="video/webm">
+                </video>
+                <div class="absolute inset-0 bg-black/40 z-0"></div>
+
+                <div class="site-grid relative z-10 h-full w-full">
+                    <div class="col-span-4 lg:col-span-4">
+                        <img src="element/logo-footer.svg" alt="NANOSIX" class="h-8 w-auto mb-8">
+                        <p class="text-base leading-relaxed">Infinite Innovation.</p>
+                    </div>
+                    <div class="col-span-4 lg:col-span-4">
+                        <h4 class="font-bold uppercase text-lg tracking-widest mb-4 text-primary">Navigation</h4>
+                        <ul
+                            class="flex flex-row min-[769px]:flex-col justify-start gap-6 min-[769px]:gap-4 text-sm min-[769px]:text-base w-full whitespace-nowrap">
+                            <li><a href="#about" class="hover:text-primary transition-colors">About Us</a></li>
+                            <li><a href="#product" class="hover:text-primary transition-colors">Product</a></li>
+                            <li><a href="#research" class="hover:text-primary transition-colors">Research</a></li>
+                            <li><a href="#people" class="hover:text-primary transition-colors">People</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-span-4 lg:col-span-4 flex flex-col items-start mt-2 lg:mt-0">
+                        <h4 class="font-bold uppercase text-lg tracking-widest mb-8 text-primary">Contact</h4>
+                        <p class="text-sm lg:text-base leading-relaxed mb-6">
+                            Jl. Bekasi Timur Raya No. 200<span class="hidden lg:inline"><br></span><span
+                                class="lg:hidden">, </span>Jakarta Timur, Indonesia
+                        </p>
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-col gap-2 lg:gap-3 w-full text-base font-normal">
+                            <a href="tel:+622122483303"
+                                class="footer-contact-pill flex items-center gap-2 w-full max-w-full lg:max-w-[290px]">
+                                <span class="material-symbols-outlined text-sm lg:text-lg">call</span>
+                                <span class="text-xs sm:text-sm lg:text-base truncate">+62 21 2248 3303</span>
+                            </a>
+                            <a href="mailto:corporate@nanosix.net"
+                                class="footer-contact-pill flex items-center gap-2 w-full max-w-full lg:max-w-[290px]">
+                                <span class="material-symbols-outlined text-sm lg:text-lg">mail</span>
+                                <span class="text-xs sm:text-sm lg:text-base truncate">corporate@nanosix.net</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-grid relative z-10 mt-20 w-full">
+                    <div class="col-span-4 lg:col-span-12">
+                        <p class="text-s font-normal opacity-50">© 2026 Nanosix Indonesia. All rights
+                            reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
